@@ -8,9 +8,10 @@
 	--dark-blue: #0b0d3b; /* Midnight Blue */
 
 	--light-purple: #d08fff; /* Light Purple */
-	--medium-purple: #8a2be2; /* Neon Purple */
-	--dark-purple: #5a189a; /* Dark Purple */
+	--bright-purple: #8a2be2; /* Neon Purple */
+	--medium-purple: #5a189a; /* Dark Purple */
 	--deep-purple: #360e5eff; /* */
+	--dark-purple: #36115e;
 
 	--bright-white: #fafafa;
 	--dim-white: #cccccc;
@@ -21,19 +22,25 @@
 
 	--background-color: var(--deep-purple); /* Midnight Blue */
 	--primary-accent-color: var(--light-blue); /* Dodger Blue */
-	--secondary-accent-color: var(--dark-purple); /* Neon Purple */
+	--secondary-accent-color: var(--medium-purple); /* Neon Purple */
 	--highlight-color: var(--hot-pink); /* Vivid Pink */
 	--text-color: var(--dim-white); /* Light Gray */
-	--button-hover-color: var(--hot-pink); /* Neon Purple */
-	--dark-background-color: var(
-		--dark-purple
-	); /* Dark background for footer and navbar */
-	--input-background-color: var(
-		--dim-dark-blue
-	); /* Slightly darker background for inputs */
-	--input-border-color: var(
-		--dim-white
-	); /* Default border color for inputs */
+	--button-hover-color: var(--bright-purple); /* Neon Purple */
+
+	/* Dark background for footer and navbar */
+	--dark-background-color: var(--medium-purple);
+
+	/* Slightly darker background for inputs */
+	--input-background-color: var(--dim-dark-blue);
+
+	/* Default border color for inputs */
+	--input-border-color: var(--dim-white);
+
+	--spacing1x: 13px;
+	--spacing2x: 26px;
+	--spacing3x: 39px;
+	--spacing4x: 52px;
+	--spacing5x: 65px;
 }
 
 .baloo-paaji-2-logo {
@@ -48,11 +55,16 @@ body {
 	font-family: "Baloo Paaji 2";
 	margin: 0;
 	padding: 0;
-	background-color: var(--background-color);
+	/* background-color: var(--background-color); */
 	color: var(--text-color);
 }
+.fi {
+	font-size: 60px; /* Larger size */
+	color: var(--bright-white);
+	margin: var(--spacing1x); /* Add spacing */
+}
 
-/* General Styles for Sticky Footer */
+/* General Styles */
 html,
 body {
 	height: 100%; /* Full height */
@@ -67,19 +79,34 @@ body {
 	flex: 1; /* Ensures content takes up available space, pushing the footer down */
 }
 
+h2 {
+	font-size: var(--spacing5x);
+	line-height: 1;
+	margin: 0;
+	padding: 50px 50px 0px;
+}
+
+p {
+	font-size: 1.25rem;
+}
+
+/* Styles for Sticky Footer */
+
 footer {
 	background-color: var(--dark-background-color);
 	color: var(--text-color);
 	text-align: center;
-	padding: 20px 0;
 	position: relative;
-	width: 100%;
 	bottom: 0;
+	padding: 50px;
+}
+footer p {
+	font-size: 1rem;
 }
 
 /* Navbar Styles */
 .navbar {
-	background-color: var(--dark-background-color);
+	background-color: var(--medium-purple);
 	padding: 15px;
 	display: flex;
 	justify-content: space-between;
@@ -87,7 +114,7 @@ footer {
 }
 
 .navbar-brand a {
-	color: var(--text-color);
+	color: var(--bright-white);
 	text-align: center;
 	font-size: 1.5rem;
 	text-decoration: none;
@@ -122,25 +149,28 @@ footer {
 .investor-banner {
 	background-color: var(--background-color);
 	text-align: center;
-	padding: 100px 20px;
+	padding: 100px 50px;
 	background-color: var(--dark-blue);
 }
 
 .hero h1,
 .investor-banner h2 {
-	font-size: 3rem;
-	color: var(--text-color);
+	font-size: var(--spacing5x);
+	line-height: 1;
+	color: var(--bright-white);
+	margin: 0;
 }
 
 .hero p,
 .investor-banner p {
-	font-size: 1.5rem;
+	font-size: var(--spacing2x);
+	margin-bottom: var(--spacing4x);
 	color: var(--text-color);
 }
 
 .cta-button {
-	background-color: var(--primary-accent-color);
-	color: var(--text-color);
+	background-color: var(--bright-white);
+	color: var(--deep-purple);
 	padding: 10px 20px;
 	margin: 10px;
 	text-decoration: none;
@@ -149,6 +179,7 @@ footer {
 
 .cta-button:hover {
 	background-color: var(--button-hover-color);
+	color: var(--bright-white);
 }
 
 /* Features Section */
@@ -157,34 +188,16 @@ footer {
 .investor-content {
 	padding: 50px;
 	text-align: center;
+	color: var(--dark-purple);
 }
 
 .feature-item h3 {
 	color: var(--primary-accent-color);
 }
 
-.footer {
-	background-color: var(--dark-background-color);
-	color: var(--text-color);
-	text-align: center;
-	padding: 20px 0;
-}
-
 /* Contact Page Styles */
 .contact-content {
 	padding: 50px;
-}
-
-.contact-content h1 {
-	font-size: 2.5rem;
-	color: var(--text-color);
-	margin-bottom: 20px;
-}
-
-.contact-content p {
-	font-size: 1.2rem;
-	color: var(--text-color);
-	margin-bottom: 20px;
 }
 
 form {
@@ -234,10 +247,6 @@ input[type="submit"]:hover {
 }
 
 /* General Section Styles */
-section,
-footer {
-	padding: 50px;
-}
 
 .video-wrapper {
 	margin: 0 auto;
@@ -256,7 +265,7 @@ footer {
 }
 
 .card {
-	background-color: var(--dim-dark-blue);
+	background-color: var(--dark-blue);
 	padding: 20px;
 	border-radius: 10px;
 	color: var(--text-color);
@@ -272,7 +281,7 @@ footer {
 
 .card h3 {
 	margin-top: 10px;
-	color: var(--primary-accent-color);
+	color: var(--light-purple);
 }
 
 .card p {
@@ -305,8 +314,14 @@ footer {
 	}
 
 	.hero h1,
-	.investor-banner h2 {
+	.investor-banner h2,
+	h2 {
 		font-size: 2.5rem;
+	}
+
+	p {
+		padding: 0px 20px;
+		font-size: 1.5rem;
 	}
 
 	.cta-button {
@@ -328,8 +343,15 @@ footer {
 
 @media screen and (max-width: 480px) {
 	.hero h1,
-	.investor-banner h2 {
+	.investor-banner h2,
+	h2 {
 		font-size: 2rem;
+	}
+
+	p {
+		padding: 0px 20px;
+		font-size: 1.5rem;
+		line-height: 1.25;
 	}
 
 	.cta-button {
