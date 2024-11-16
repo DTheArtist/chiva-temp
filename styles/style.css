@@ -288,6 +288,15 @@ input[type="submit"]:hover {
 	color: var(--dim-white);
 }
 
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
 	.main-nav {
