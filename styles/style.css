@@ -204,7 +204,7 @@ form {
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 20px;
-	background-color: var(--dark-background-color);
+	background-color: var(--dark-blue);
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -223,9 +223,9 @@ textarea {
 	width: 95%;
 	padding: 10px;
 	margin-bottom: 15px;
-	border: 1px solid var(--input-border-color);
-	background-color: var(--input-background-color);
-	color: var(--text-color);
+	border: 1px solid var(--dark-grey);
+	background-color: var(--bright-white);
+	color: var(--dark-blue);
 	border-radius: 5px;
 }
 
@@ -234,8 +234,8 @@ textarea {
 }
 
 input[type="submit"] {
-	background-color: var(--primary-accent-color);
-	color: var(--text-color);
+	background-color: var(--bright-purple);
+	color: var(--bright-white);
 	padding: 10px 20px;
 	border: none;
 	border-radius: 5px;
@@ -243,7 +243,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-	background-color: var(--button-hover-color);
+	background-color: var(--hot-pink);
 }
 
 /* General Section Styles */
