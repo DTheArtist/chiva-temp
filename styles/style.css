@@ -90,7 +90,7 @@ p {
 	font-size: 1.25rem;
 }
 
-a {
+a, a:visited{
 	color: var(--bright-purple);
 	font-size: 1.25rem;
 }
