@@ -90,6 +90,11 @@ p {
 	font-size: 1.25rem;
 }
 
+a {
+	color: var(--bright-purple);
+	font-size: 1.25rem;
+}
+
 /* Styles for Sticky Footer */
 
 footer {
