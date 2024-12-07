@@ -95,8 +95,10 @@ a:visited {
 	color: var(--light-purple);
 	font-size: 1.25rem;
 }
-a:hover {
-	color: var(--hot-pink);
+a:hover,
+a:active,
+a:focus {
+	color: var(--bright-blue);
 	font-size: 1.25rem;
 }
 
