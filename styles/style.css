@@ -90,8 +90,13 @@ p {
 	font-size: 1.25rem;
 }
 
-a, a:visited{
-	color: var(--bright-purple);
+a,
+a:visited {
+	color: var(--light-purple);
+	font-size: 1.25rem;
+}
+a:hover {
+	color: var(--hot-pink);
 	font-size: 1.25rem;
 }
 
