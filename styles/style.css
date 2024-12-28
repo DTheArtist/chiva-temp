@@ -105,17 +105,36 @@ a:focus {
 /* Styles for Sticky Footer */
 
 footer {
-	background-color: var(--dark-background-color);
+	background-color: var(--dark-blue);
 	color: var(--text-color);
-	text-align: center;
+	/*text-align: center;*/
 	position: relative;
 	bottom: 0;
 	padding: 50px;
 }
 footer p {
 	font-size: 1rem;
+	color: var(--light-grey);
 }
 
+footer ul li a,
+footer ul li {
+	text-decoration: none;
+	font-size: 1rem;
+	list-style: none;
+	margin-left: 5px;
+}
+
+footer li::before {
+	content: "▶";
+	color: var(--light-grey);
+	font-size: 0.7rem;
+}
+
+footer ul li a:hover {
+	text-decoration: underline;
+	font-size: 1rem;
+}
 /* Navbar Styles */
 .navbar {
 	background-color: var(--medium-purple);
@@ -157,12 +176,17 @@ footer p {
 }
 
 /* Hero and Banner Section */
-.hero,
-.investor-banner {
+.hero {
 	background-color: var(--background-color);
 	text-align: center;
 	padding: 100px 50px;
 	background-color: var(--dark-blue);
+}
+.investor-banner {
+	background-color: var(--background-color);
+	text-align: center;
+	padding: 100px 50px;
+	background-color: var(--medium-purple);
 }
 
 .hero h1,
@@ -182,11 +206,14 @@ footer p {
 
 .cta-button {
 	background-color: var(--bright-white);
-	color: var(--deep-purple);
 	padding: 10px 20px;
 	margin: 10px;
 	text-decoration: none;
 	border-radius: 5px;
+}
+
+a.cta-button {
+	color: var(--bright-purple);
 }
 
 .cta-button:hover {
