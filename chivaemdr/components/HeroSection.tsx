@@ -8,9 +8,9 @@ export default function HeroSection({
 	ctalinks,
 }: HeroProps) {
 	return (
-		<section className="relative bg-gradient-to-br from-violet-900 via-indigo-800 to-cyan-700 text-center py-28 px-6 md:px-20 overflow-hidden">
+		<section className="relative bg-gradient-to-br from-violet-900 via-indigo-800 to-cyan-700 text-center py-56 px-6 md:px-20 overflow-hidden">
 			{/* Glowing Overlay */}
-			<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.3)_0%,_transparent_50%)] pointer-events-none"></div>
+			<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(0,0,0,1)_0%,_transparent_50%)] pointer-events-none"></div>
 			<div className="absolute inset-0 z-0">
 				<Image
 					src="/Pocket-Therapist-Logo-Style-2024.jpg"
@@ -28,7 +28,7 @@ export default function HeroSection({
 					{pagetitle}
 				</h1>
 
-				<p className="mt-6 text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+				<p className="mt-6 text-lg md:text-xl text-slate-100 max-w-3xl mx-auto leading-relaxed">
 					{content}
 				</p>
 

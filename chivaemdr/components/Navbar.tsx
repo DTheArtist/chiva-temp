@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react"; // Icons for mobile menu toggle
+import { Menu, X } from "re"; // Icons for mobile menu toggle
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,7 @@ export default function Navbar() {
 					onClick={() => setIsOpen(!isOpen)}
 					aria-label="Toggle menu"
 				>
-					{isOpen ? <X /> : <Menu />}
+					{/* {isOpen ? <X /> : <Menu />} */}
 				</button>
 
 				{/* Navigation Links */}
