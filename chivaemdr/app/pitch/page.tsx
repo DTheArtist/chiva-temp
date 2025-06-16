@@ -15,7 +15,7 @@ export default function Pitch() {
 			<main>
 				<HeroSection
 					pagetitle=<>
-						Chi'Va™: AI-Guided <br /> Mental Health Support
+						Chi'Va™: AI-Guided <br/> Mental Health Support
 					</>
 					content="Unlocking Lost Revenue for Behavioral Health Providers"
 					// pass as array of tuples
